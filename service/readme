@@ -1,0 +1,71 @@
+API For Register User:-
+
+Method:-
+POST
+
+1.URL:-
+localhost:8080/register
+
+ReqBody:-
+
+
+
+{
+	            "firstName":"Ashwini",
+	            "employeeCode":"1",
+                "lastName":"More",
+                "password":"ashwini123",
+                "email":"ashwini10@gmail.com",
+                "organizationName":"quest"
+}
+
+
+Note:-
+
+one user register only once (Unique employee code)
+
+==================================================================
+
+API For login User:-
+Method:-
+POST
+
+2.URL:-
+localhost:8080/login
+
+ReqBody:-{
+	
+	          
+              "password":"ashwini123",
+                "email":"ashwini1@gmail.com"
+	       
+}
+
+Note:-
+
+only Register user able to login
+
+=============================================================
+
+API For get user data:-
+Method:-
+POST
+
+URL:-
+localhost:8080/employee/get
+
+Headers:-
+
+Authorization:-Token(will getting from login api)
+
+ReqBody:-
+
+
+   {
+	
+"search":"di",
+"page":1,
+"limit":2
+}
+
+
